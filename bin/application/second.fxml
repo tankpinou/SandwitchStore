@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.secondController">
+   <children>
+      <ListView fx:id="myList" prefHeight="544.0" prefWidth="900.0" />
+      <Button layoutX="20.0" layoutY="577.0" mnemonicParsing="false" onAction="#addSameOrder" prefHeight="28.0" prefWidth="151.0" text="+ Same Order Line" />
+      <Button fx:id="removeOrder" layoutX="20.0" layoutY="633.0" mnemonicParsing="false" onAction="#removeOrderLine" prefHeight="28.0" prefWidth="151.0" text="- Remove Order Line" />
+      <Button fx:id="back" layoutX="211.0" layoutY="633.0" mnemonicParsing="false" onAction="#goBack" prefHeight="28.0" prefWidth="151.0" text="Back" />
+      <Button layoutX="211.0" layoutY="577.0" mnemonicParsing="false" onAction="#clearMe" prefHeight="28.0" prefWidth="151.0" text="Clear Order" />
+      <TextField fx:id="totalText" editable="false" layoutX="705.0" layoutY="577.0" onAction="#orderTotal" prefHeight="30.0" prefWidth="138.0" />
+      <Label layoutX="615.0" layoutY="582.0" text="Order Total $" />
+   </children>
+</AnchorPane>

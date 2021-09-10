@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="700.0" minWidth="661.0" prefHeight="727.0" prefWidth="661.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.mainController">
+	<children>
+		<ComboBox fx:id="sandwichComboBox" layoutX="43.0" layoutY="102.0" onAction="#Selectsandwitch" prefHeight="27.0" prefWidth="123.0" promptText="Chicken" />
+		<Button fx:id="addIngredientbutton" layoutX="232.0" layoutY="320.0" mnemonicParsing="false" onAction="#addIngredient" prefHeight="27.0" prefWidth="89.0" text="Add &gt;&gt;" />
+		<ListView fx:id="basicsIngredientsList" layoutX="520.0" layoutY="94.0" prefHeight="146.0" prefWidth="123.0" />
+		<ListView fx:id="ingredients" layoutX="24.0" layoutY="307.0" prefHeight="260.0" prefWidth="195.0" />
+		<Button fx:id="removeIngredientButton" layoutX="232.0" layoutY="358.0" mnemonicParsing="false" onAction="#removeIngredient" prefHeight="27.0" prefWidth="89.0" text="&lt;&lt; Remove" />
+		<TextField fx:id="orderTotal" layoutX="422.0" layoutY="579.0" prefHeight="27.0" prefWidth="98.0" />
+		<Button fx:id="viewOrderButton" layoutX="542.0" layoutY="431.0" mnemonicParsing="false" onAction="#selectSecondStage" prefHeight="27.0" prefWidth="98.0" text="View Order" />
+		<Label contentDisplay="CENTER" layoutX="332.0" layoutY="579.0" prefHeight="27.0" prefWidth="98.0" text="Order Total $" textAlignment="CENTER" />
+      <Button fx:id="addToOrderButton" layoutX="538.0" layoutY="358.0" mnemonicParsing="false" onAction="#onAddToOrder" prefHeight="27.0" prefWidth="105.0" text="Add to order" />
+      <ImageView fx:id="imageView" fitHeight="219.0" fitWidth="284.0" layoutX="219.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ChickenSandwich.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="43.0" layoutY="58.0" prefHeight="34.0" prefWidth="123.0" text="Sandwich type" />
+      <Label layoutX="520.0" layoutY="66.0" text="Basic ingredients" />
+      <ListView fx:id="selectedIngredients" layoutX="332.0" layoutY="307.0" prefHeight="260.0" prefWidth="195.0" />
+      <Label layoutX="26.0" layoutY="268.0" prefHeight="34.0" prefWidth="195.0" text="Available Ingredients" />
+      <Button fx:id="clearListbutton" layoutX="231.0" layoutY="404.0" mnemonicParsing="false" onAction="#clearTheList" prefHeight="27.0" prefWidth="89.0" text="Clear list" />
+      <ListView fx:id="infoArea" layoutX="9.0" layoutY="612.0" prefHeight="112.0" prefWidth="638.0" />
+	</children>
+</AnchorPane>
